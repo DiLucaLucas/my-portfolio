@@ -72,17 +72,17 @@ const Navbar = () => {
             <div className="flex flex-col items-center">
               <a
                 href="/"
-                className="font-weight: 700 text-white py-2 px-4 w-full block"
+                className="font-weight: 700 text-white font-semibold hover:bg-customHover py-2 px-4 w-full block"
               >
                 Home
               </a>
-              <a href="/skills" className="text-white py-2 px-4 w-full block">
+              <a href="/skills" className="text-white font-semibold hover:bg-customHover py-2 px-4 w-full block">
                 Skills
               </a>
-              <a href="/about" className="text-white py-2 px-4 w-full block">
+              <a href="/about" className="text-white font-semibold hover:bg-customHover py-2 px-4 w-full block">
                 About Me
               </a>
-              <a href="/contact" className="text-white py-2 px-4 w-full block">
+              <a href="/contact" className="text-white font-semibold hover:bg-customHover py-2 px-4 w-full block">
                 Contact
               </a>
             </div>
