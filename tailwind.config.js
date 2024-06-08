@@ -4,11 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "custom-blue": "#222438",
-        "customHover": "#F04A52",
+        customBackground: "#222438",
+        customButtons: "#F04A52",
+        customHover: "#FF303A",
+        customCards: "#292C3E",
       },
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },

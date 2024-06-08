@@ -1,42 +1,40 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import LDLDevIcon from "../assets/LDLDevIcon.png"; // Importar la imagen
+import Icon from "../assets/logo/logotipo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-custom-blue py-4">
+    <nav className="bg-customBackground py-4  w-full fixed top-0 z-10 border-4 border-customButtons">
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-        {/* Left side: Logo */}
-        <div className="flex-shrink-0">
-          <img src={LDLDevIcon} alt="Logo" className="h-14" />
+        <div className="flex-shrink-0 ml-4">
+          <img src={Icon} alt="Logo" className="h-12 w-12" />
         </div>
 
-        {/* Right side: Menu button and links */}
-        <div className="hidden md:flex space-x-4 items-center">
+        <div className="hidden md:flex space-x-4 items-center px-12">
           <a
             href="/"
-            className="text-white font-semibold hover:bg-customHover py-2 px-4 rounded-sm"
+            className="text-white font-semibold hover:bg-customButtons py-2 px-4 rounded-sm transform transition duration-300 hover:scale-105"
           >
             Home
           </a>
           <a
             href="/skills"
-            className="text-white font-semibold hover:bg-customHover py-2 px-4 rounded-sm"
+            className="text-white font-semibold hover:bg-customButtons py-2 px-4 rounded-sm transform transition duration-300 hover:scale-105"
           >
             Skills
           </a>
           <a
             href="/about"
-            className="text-white font-semibold hover:bg-customHover py-2 px-4 rounded-sm"
+            className="text-white font-semibold hover:bg-customButtons py-2 px-4 rounded-sm transform transition duration-300 hover:scale-105"
           >
-            About Me
+            Projects
           </a>
           <a
             href="/contact"
-            className="text-white font-semibold hover:bg-customHover py-2 px-4 rounded-sm"
+            className="text-white font-semibold hover:bg-customButtons py-2 px-4 rounded-sm transform transition duration-300 hover:scale-105"
           >
             Contact
           </a>
@@ -68,21 +66,30 @@ const Navbar = () => {
         leaveTo="transform opacity-0 scale-95"
       >
         {(ref) => (
-          <div ref={ref} className="md:hidden bg-custom-blue">
+          <div ref={ref} className="md:hidden bg-customBackground">
             <div className="flex flex-col items-center">
               <a
                 href="/"
-                className="font-weight: 700 text-white font-semibold hover:bg-customHover py-2 px-4 w-full block"
+                className="font-weight: 700 text-white font-semibold hover:bg-customButtons py-2 px-4 w-full block"
               >
                 Home
               </a>
-              <a href="/skills" className="text-white font-semibold hover:bg-customHover py-2 px-4 w-full block">
+              <a
+                href="/skills"
+                className="text-white font-semibold hover:bg-customButtons py-2 px-4 w-full block"
+              >
                 Skills
               </a>
-              <a href="/about" className="text-white font-semibold hover:bg-customHover py-2 px-4 w-full block">
-                About Me
+              <a
+                href="/about"
+                className="text-white font-semibold hover:bg-customButtons py-2 px-4 w-full block"
+              >
+                Projects
               </a>
-              <a href="/contact" className="text-white font-semibold hover:bg-customHover py-2 px-4 w-full block">
+              <a
+                href="/contact"
+                className="text-white font-semibold hover:bg-customButtons py-2 px-4 w-full block"
+              >
                 Contact
               </a>
             </div>
