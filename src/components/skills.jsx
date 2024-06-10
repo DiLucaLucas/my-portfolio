@@ -47,10 +47,10 @@ const skillsData = [
 
 function Skills() {
   return (
-    <div className="bg-customBackground py-12 mt-12">
+    <div id="skills" className="bg-customBackground py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h3 className="text-white text-5xl font-bold text-center">Skill-Set</h3>
-        <span className="block w-1/4 h-1 bg-customButtons mt-1 mb-20 mx-auto"></span>
+        <h3 className="text-white text-5xl font-bold text-center">Skills</h3>
+        <span className="block w-32 h-1 bg-customButtons mt-1 mb-20 mx-auto"></span>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {skillsData.map((skill, index) => (
             <div

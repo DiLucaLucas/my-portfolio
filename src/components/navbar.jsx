@@ -21,26 +21,25 @@ const Navbar = () => {
             Home
           </a>
           <a
-            href="/skills"
+            href="#skills"
             className="text-white font-semibold hover:bg-customButtons py-2 px-4 rounded-sm transform transition duration-300 hover:scale-105"
           >
             Skills
           </a>
           <a
-            href="/about"
+            href="#projects"
             className="text-white font-semibold hover:bg-customButtons py-2 px-4 rounded-sm transform transition duration-300 hover:scale-105"
           >
             Projects
           </a>
           <a
-            href="/contact"
+            href="#footer"
             className="text-white font-semibold hover:bg-customButtons py-2 px-4 rounded-sm transform transition duration-300 hover:scale-105"
           >
             Contact
           </a>
         </div>
 
-        {/* Mobile Menu button */}
         <div className="md:hidden flex items-center">
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -69,25 +68,25 @@ const Navbar = () => {
           <div ref={ref} className="md:hidden bg-customBackground">
             <div className="flex flex-col items-center">
               <a
-                href="/"
-                className="font-weight: 700 text-white font-semibold hover:bg-customButtons py-2 px-4 w-full block"
+                href="#home"
+                className="text-white font-semibold hover:bg-customButtons py-2 px-4 w-full block"
               >
                 Home
               </a>
               <a
-                href="/skills"
+                href="#skills"
                 className="text-white font-semibold hover:bg-customButtons py-2 px-4 w-full block"
               >
                 Skills
               </a>
               <a
-                href="/about"
+                href="#projects"
                 className="text-white font-semibold hover:bg-customButtons py-2 px-4 w-full block"
               >
                 Projects
               </a>
               <a
-                href="/contact"
+                href="#footer"
                 className="text-white font-semibold hover:bg-customButtons py-2 px-4 w-full block"
               >
                 Contact
