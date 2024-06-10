@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { Player } from "@lottiefiles/react-lottie-player";
-import animation from '../assets/animations/ComputerAnimation.json';
+import animation from "../assets/animations/ComputerAnimation.json";
 
 const projectsData = [
   {
